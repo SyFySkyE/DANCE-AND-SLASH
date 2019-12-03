@@ -144,3 +144,43 @@ D:\College Shit\School Work\Fall 2019\GPROG I\repos\DanceN-Slash\ProjectRythym\o
 D:\College Shit\School Work\Fall 2019\GPROG I\repos\DanceN-Slash\ProjectRythym\bin\Windows\x86\Debug\Content\playerHurt.xnb
 D:\College Shit\School Work\Fall 2019\GPROG I\repos\DanceN-Slash\ProjectRythym\bin\Windows\x86\Debug\Content\skeletonDeadLeft.xnb
 D:\College Shit\School Work\Fall 2019\GPROG I\repos\DanceN-Slash\ProjectRythym\bin\Windows\x86\Debug\Content\skeletonDeadRight.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\attackZoneRect.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\Crystal Tokyo by FantoMenk and Meganeko.wma
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\Crystal Tokyo by FantoMenk and Meganeko.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\metro.wma
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\metro.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\playerAttackDown.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\playerAttackLeft.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\playerAttackRight.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\playerAttackUp.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\playerHurt.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\playerIdle.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\skeletonDeadLeft.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\skeletonDeadRight.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\skeletonLeft.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\skeletonRight.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\SpriteFont1.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\SpriteMarker.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\ProjectRythym.exe
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\ProjectRythym.pdb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\MonoGame.Framework.dll
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.MediaFoundation.dll
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.dll
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.XAudio2.dll
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.DXGI.dll
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.Direct3D11.dll
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.Direct2D1.dll
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.XInput.dll
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\MonoGame.Framework.xml
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.MediaFoundation.xml
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.xml
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.XAudio2.xml
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.DXGI.xml
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.Direct3D11.xml
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.Direct2D1.xml
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\SharpDX.XInput.xml
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\obj\x86\Debug\ProjectRythym.csprojAssemblyReference.cache
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\obj\x86\Debug\ProjectRythym.csproj.CoreCompileInputs.cache
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\obj\x86\Debug\ProjectRythym.csproj.CopyComplete
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\obj\x86\Debug\ProjectRythym.exe
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\obj\x86\Debug\ProjectRythym.pdb

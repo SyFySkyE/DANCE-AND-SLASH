@@ -14,9 +14,9 @@ namespace ProjectRythym
         private MonoGameSwordsPerson player;
         private float currentTime = 0;
         private bool isPlaying = false;
-        private int numberOfSkeletonDirections;
-        private float speedBpmCalulation = 350f; // Multiplying this number with song's bps determines speed of enemies
-        public int difficulty = 2; // The higher, the easier
+        private int numberOfSkeletonDirections; 
+        private float speedBpmCalulation = 350f; // Multiplying this number with song's bps determines speed of enemies // How many pixels between skeleSpawn and attackRect.
+        private int speed = 2; // Speed is divided by this number
 
         public SkeletonManager(Game game, MonoGameSwordsPerson player) : base(game)
         {
@@ -34,7 +34,7 @@ namespace ProjectRythym
         {
             MonogameSkeleton skeleton = new MonogameSkeleton(this.Game);
             skeleton.Initialize();
-            skeleton.NewSpeed = (speedBpmCalulation * songManager.Bps) / difficulty;
+            skeleton.NewSpeed = (speedBpmCalulation * songManager.Bps) / speed;
             
             if (direction == "Top")
             {
@@ -99,13 +99,13 @@ namespace ProjectRythym
                     skeletons[i].Update(gameTime);
                     if (PlayerAttack(skeletons[i]))
                     {
-                        ScoreManager.Score++;
+                        ScoreManager.AddKill();
                         skeletons[i].IsDead = true;
                         skeletons.Remove(skeletons[i]);
                     }
                     else if (SkeleAttack(skeletons[i]))
                     {
-                        ScoreManager.Lives--;
+                        ScoreManager.AddDamage();
                         player.IsHurt = true;
                         skeletons.Remove(skeletons[i]);
                     }
