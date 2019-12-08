@@ -26,10 +26,9 @@ namespace ProjectRythym
                 }
             }
         }
-        private float currentTime = 0;
-        private float totalTime = 0;
 
         public static event Action OnBeat;
+        public event Action OnSongEnd;
 
         public SongManager( Game game) : base(game)
         {            
@@ -53,8 +52,11 @@ namespace ProjectRythym
 
         public override void Update(GameTime gameTime)
         {
-            previousFrameTime = (float)gameTime.ElapsedGameTime.TotalMilliseconds;
             ScoreManager.SongLength = $"{MediaPlayer.PlayPosition} / {song.Duration}";
+            if (MediaPlayer.PlayPosition == song.Duration)
+            {
+                OnSongEnd(); // Stil doesn't work
+            }
             base.Update(gameTime);
         }
 

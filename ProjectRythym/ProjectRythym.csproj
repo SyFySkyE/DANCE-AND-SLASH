@@ -45,6 +45,7 @@
     <Compile Include="DrawableSprite.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameConsole.cs" />
+    <Compile Include="GroundManager.cs" />
     <Compile Include="InputHandler.cs" />
     <Compile Include="MonogameSkeleton.cs" />
     <Compile Include="MonoGameSwordsPerson.cs" />
@@ -68,6 +69,7 @@
   <ItemGroup>
     <Content Include="Content\attackZoneRect.png" />
     <Content Include="Content\Crystal Tokyo by FantoMenk and Meganeko.ogg" />
+    <Content Include="Content\dnsback.png" />
     <Content Include="Content\playerAttackDown.png" />
     <Content Include="Content\playerAttackUp.png" />
     <Content Include="Content\playerAttackLeft.png" />

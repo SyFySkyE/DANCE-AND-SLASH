@@ -16,13 +16,19 @@ namespace ProjectRythym
         private bool isPlaying = false;
         private int numberOfSkeletonDirections; 
         private float speedBpmCalulation = 350f; // Multiplying this number with song's bps determines speed of enemies // How many pixels between skeleSpawn and attackRect.
-        private int speed = 2; // Speed is divided by this number
+        private int speed = 2; // Speed is divided by this number        
 
         public SkeletonManager(Game game, MonoGameSwordsPerson player) : base(game)
         {
             this.player = player;
             skeletons = new List<MonogameSkeleton>();
             songManager = new SongManager(game);
+            songManager.OnSongEnd += SongManager_OnSongEnd;
+        }
+
+        private void SongManager_OnSongEnd()
+        {
+            isPlaying = false;
         }
 
         public void AddSkeleton(string direction)

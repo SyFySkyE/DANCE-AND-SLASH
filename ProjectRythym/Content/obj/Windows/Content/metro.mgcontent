@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <SourceFile>C:/Users/sonic/OneDrive/Documents/College Shit/FALL 2019/GPROG I/repos/DANCE-AND-SLASH/ProjectRythym/Content/metro.ogg</SourceFile>
-  <SourceTime>2019-12-02T12:27:05.3947403-06:00</SourceTime>
-  <DestFile>C:/Users/sonic/OneDrive/Documents/College Shit/FALL 2019/GPROG I/repos/DANCE-AND-SLASH/ProjectRythym/Content/bin/Windows/Content/metro.xnb</DestFile>
-  <DestTime>2019-12-02T21:11:33.9692234-06:00</DestTime>
+  <SourceFile>D:/College Shit/School Work/Fall 2019/GPROG I/repos/DANCE-AND-SLASH/ProjectRythym/Content/metro.ogg</SourceFile>
+  <SourceTime>2019-12-07T19:48:57.9685362-06:00</SourceTime>
+  <DestFile>D:/College Shit/School Work/Fall 2019/GPROG I/repos/DANCE-AND-SLASH/ProjectRythym/Content/bin/Windows/Content/metro.xnb</DestFile>
+  <DestTime>2019-12-07T19:49:29.0293851-06:00</DestTime>
   <Importer>OggImporter</Importer>
   <ImporterTime>2019-07-19T12:50:46-05:00</ImporterTime>
   <Processor>SongProcessor</Processor>
@@ -15,6 +15,6 @@
   <Dependencies />
   <BuildAsset />
   <BuildOutput>
-    <string>C:/Users/sonic/OneDrive/Documents/College Shit/FALL 2019/GPROG I/repos/DANCE-AND-SLASH/ProjectRythym/Content/bin/Windows/Content/metro.wma</string>
+    <string>D:/College Shit/School Work/Fall 2019/GPROG I/repos/DANCE-AND-SLASH/ProjectRythym/Content/bin/Windows/Content/metro.wma</string>
   </BuildOutput>
 </PipelineBuildEvent>

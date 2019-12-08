@@ -19,6 +19,7 @@ namespace ProjectRythym
         private SongManager songManager;
         private PlayerController input;
         private ScoreManager score;
+        private GroundManager ground;
 
         private string instruction;
         private string instruction1 = "Press I to load song, then R to play";        
@@ -27,7 +28,10 @@ namespace ProjectRythym
         private double framesPerSecond = 60;
 
         public Game1()
-        {            
+        {
+            ground = new GroundManager(this);
+            this.Components.Add(ground);
+
             player = new MonoGameSwordsPerson(this);
             this.Components.Add(player);
 

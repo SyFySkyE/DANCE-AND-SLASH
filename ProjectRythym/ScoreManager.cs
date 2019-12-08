@@ -48,11 +48,11 @@ namespace ProjectRythym
         public override void Draw(GameTime gameTime)
         {
             sb.Begin();
-            sb.DrawString(font, "Kills: " + numberOfKills.ToString(), numOfKillsLoc, Color.White);
-            sb.DrawString(font, "Damage Taken: " + numberOfDamageTaken.ToString(), numOfDamageTakenLoc, Color.White);
-            sb.DrawString(font, "Score: " + Score, scoreLoc, Color.White);
-            sb.DrawString(font, "Song: " + SongName, songNameLoc, Color.White);
-            sb.DrawString(font, SongLength, songLengthLoc, Color.White);
+            sb.DrawString(font, "Kills: " + numberOfKills.ToString(), numOfKillsLoc, Color.Black);
+            sb.DrawString(font, "Damage Taken: " + numberOfDamageTaken.ToString(), numOfDamageTakenLoc, Color.Black);
+            sb.DrawString(font, "Score: " + Score, scoreLoc, Color.Black);
+            sb.DrawString(font, "Song: " + SongName, songNameLoc, Color.Black);
+            sb.DrawString(font, SongLength, songLengthLoc, Color.Black);
             sb.End();
             base.Draw(gameTime);
         }
