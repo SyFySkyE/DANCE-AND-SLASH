@@ -121,6 +121,12 @@
 /processorParam:TextureFormat=Color
 /build:playerIdle.png
 
+#begin positiveforce.ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:positiveforce.ogg
+
 #begin skeletonDeadLeft.png
 /importer:TextureImporter
 /processor:TextureProcessor

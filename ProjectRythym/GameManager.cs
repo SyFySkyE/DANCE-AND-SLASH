@@ -47,7 +47,7 @@ namespace ProjectRythym
         public override void Initialize()
         {
             instructionLoc = new Vector2((GraphicsDevice.Viewport.Width / 2) - 100, 600); // TODO Find a better way to get XPos
-            resultsLoc = new Vector2((GraphicsDevice.Viewport.Width / 2) - 100, GraphicsDevice.Viewport.Height / 2);
+            resultsLoc = new Vector2((GraphicsDevice.Viewport.Width / 2) - 250, GraphicsDevice.Viewport.Height / 2);
             this.SpriteTexture = Game.Content.Load<Texture2D>("SpriteMarker");
             base.Initialize();
         }

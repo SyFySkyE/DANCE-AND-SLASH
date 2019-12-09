@@ -12,9 +12,9 @@ namespace ProjectRythym
     class SongManager : GameComponent
     {
         private Song song;
-        private int bpm = 174;
+        private int bpm = 174; // 174 for Crystal Tokyo, 140 for Positive Force
         public int Bpm { get { return this.bpm; } }
-        private float bps = 2.9f;
+        private float bps = 2.9f; // 2.9 for Crystal Tokyo, 2.33 for Positive Force. This gets set elsewhere
         public float Bps { get { return this.bps; } }
         private float bpms = 0;
         private SongState songState = SongState.HasNotBeenPlayed;
@@ -34,7 +34,7 @@ namespace ProjectRythym
         public SongManager( Game game) : base(game)
         {            
             MediaPlayer.MediaStateChanged += MediaPlayer_MediaStateChanged;
-            song = Game.Content.Load<Song>("Crystal Tokyo by FantoMenk and Meganeko");
+            song = Game.Content.Load<Song>("Crystal Tokyo by FantoMenk and Meganeko"); // 'Crystal Tokyo by FantoMenk and Meganeko' or 'positiveforce'
         }
 
         public override void Initialize()

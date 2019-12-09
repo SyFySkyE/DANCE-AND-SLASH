@@ -46,6 +46,8 @@ namespace ProjectRythym
             {
                 isPlaying = false;
                 hasPlayerCompletedSong = true;
+                skeletons.Clear();
+                currentTime = 0;
                 this.currentSongState = SongState.HasNotBeenPlayed;
             }
         }
@@ -62,13 +64,7 @@ namespace ProjectRythym
 
         private void SongManager_OnSongEnd()
         {
-            this.CurrentSongState = SongState.HasEnded;
-            EvaluatePlayerPerformance();
-        }
-
-        private void EvaluatePlayerPerformance()
-        {
-
+            this.CurrentSongState = SongState.HasEnded;        
         }
 
         public void AddSkeleton(string direction)

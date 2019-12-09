@@ -21,7 +21,7 @@ namespace ProjectRythym
             IsFixedTimeStep = true;
             this.TargetElapsedTime = TimeSpan.FromSeconds(1d / framesPerSecond); 
 
-            this.Window.Title = TargetElapsedTime.ToString();
+            this.Window.Title = "DANCE AND SLASH    " + TargetElapsedTime.ToString();
 
             graphics = new GraphicsDeviceManager(this);
             graphics.PreferredBackBufferHeight = 800;

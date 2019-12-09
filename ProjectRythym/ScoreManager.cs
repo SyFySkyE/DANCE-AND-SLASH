@@ -75,7 +75,7 @@ namespace ProjectRythym
 
         public static bool DidPlayerPass()
         {
-            if (totalNumberOfNotes * winThreshold >= numberOfKills)
+            if (totalNumberOfNotes * winThreshold <= numberOfKills)
             {
                 return true;
             }
@@ -87,6 +87,7 @@ namespace ProjectRythym
 
         public static void ResetStats()
         {
+            Score = 0;
             totalNumberOfNotes = 0;
             numberOfKills = 0;
             numberOfDamageTaken = 0;

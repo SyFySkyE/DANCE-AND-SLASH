@@ -226,3 +226,5 @@ D:\College Shit\School Work\Fall 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythy
 D:\College Shit\School Work\Fall 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\obj\x86\Debug\ProjectRythym.pdb
 D:\College Shit\School Work\Fall 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\dnsback.xnb
 C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\dnsback.xnb
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\positiveforce.wma
+C:\Users\sonic\OneDrive\Documents\College Shit\FALL 2019\GPROG I\repos\DANCE-AND-SLASH\ProjectRythym\bin\Windows\x86\Debug\Content\positiveforce.xnb
