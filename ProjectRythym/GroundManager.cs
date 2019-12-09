@@ -22,10 +22,10 @@ namespace ProjectRythym
         }
 
         protected override void LoadContent()
-        {
-            backdrop = Game.Content.Load<Texture2D>("dnsback");
-            this.SpriteTexture = backdrop;
-            base.LoadContent();            
+        {            
+            base.LoadContent();
+            this.backdrop = this.Game.Content.Load<Texture2D>("dnsback");
+            this.spriteTexture = backdrop;
         }
     }
 }

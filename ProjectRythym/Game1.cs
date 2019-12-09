@@ -12,41 +12,12 @@ namespace ProjectRythym
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        SpriteFont font;
-
-        MonoGameSwordsPerson player;
-        SkeletonManager skeleManager;
-        private SongManager songManager;
-        private PlayerController input;
-        private ScoreManager score;
-        private GroundManager ground;
-
-        private string instruction;
-        private string instruction1 = "Press I to load song, then R to play";        
-
-        private Vector2 instructionLoc;
         private double framesPerSecond = 60;
+
+        private GameManager gameManager;
 
         public Game1()
         {
-            ground = new GroundManager(this);
-            this.Components.Add(ground);
-
-            player = new MonoGameSwordsPerson(this);
-            this.Components.Add(player);
-
-            songManager = new SongManager(this);
-            this.Components.Add(songManager);
-
-            skeleManager = new SkeletonManager(this, player);
-            this.Components.Add(skeleManager);                       
-
-            input = new PlayerController(this);
-            this.Components.Add(input);
-
-            score = new ScoreManager(this);
-            this.Components.Add(score);
-
             IsFixedTimeStep = true;
             this.TargetElapsedTime = TimeSpan.FromSeconds(1d / framesPerSecond); 
 
@@ -67,7 +38,7 @@ namespace ProjectRythym
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            instructionLoc = new Vector2(GraphicsDevice.Viewport.Width / 2, 600);
+            
             base.Initialize();
         }
 
@@ -79,7 +50,8 @@ namespace ProjectRythym
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            font = this.Content.Load<SpriteFont>("SpriteFont1");
+            gameManager = new GameManager(this, spriteBatch);
+            this.Components.Add(gameManager);
 
             // TODO: use this.Content to load your game content here
         }
@@ -103,25 +75,6 @@ namespace ProjectRythym
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            if (!songManager.IsPlaying)
-            {
-                instruction = instruction1;
-            }
-            else
-            {
-                instruction = "";
-            }
-            
-            if (input.HandleKeyboard() == "start") 
-            {                
-                songManager.QueueSong();
-            }
-            else if (input.HandleKeyboard() == "resume")
-            {
-                skeleManager.StartSpawning();
-                songManager.ResumeSong();
-            }
-
             base.Update(gameTime);
         }
 
@@ -132,10 +85,6 @@ namespace ProjectRythym
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            spriteBatch.Begin();
-            spriteBatch.DrawString(font, instruction, instructionLoc, Color.White);
-            spriteBatch.End();
 
             base.Draw(gameTime);
         }

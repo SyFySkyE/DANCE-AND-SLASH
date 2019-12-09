@@ -45,6 +45,7 @@
     <Compile Include="DrawableSprite.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="GameConsole.cs" />
+    <Compile Include="GameManager.cs" />
     <Compile Include="GroundManager.cs" />
     <Compile Include="InputHandler.cs" />
     <Compile Include="MonogameSkeleton.cs" />

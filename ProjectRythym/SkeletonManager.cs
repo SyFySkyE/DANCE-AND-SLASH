@@ -16,19 +16,43 @@ namespace ProjectRythym
         private bool isPlaying = false;
         private int numberOfSkeletonDirections; 
         private float speedBpmCalulation = 350f; // Multiplying this number with song's bps determines speed of enemies // How many pixels between skeleSpawn and attackRect.
-        private int speed = 2; // Speed is divided by this number        
+        private int speed = 2; // Speed is divided by this number  
+        private SongState currentSongState;
+        public SongState CurrentSongState { get { return this.currentSongState; }
+            set
+            {
+                if (currentSongState != value)
+                {
+                    currentSongState = value;
+                    HandleStateChange();
+                }
+            }
+        }
+
+        private void HandleStateChange()
+        {
+            if (this.currentSongState == SongState.IsQueued)
+            {
+                songManager.QueueSong();
+            }
+            else if (this.currentSongState == SongState.IsPlaying)
+            {
+                isPlaying = true;
+                songManager.ResumeSong();
+            }
+            else if (this.currentSongState == SongState.HasEnded)
+            {
+                isPlaying = false;                
+            }
+        }
 
         public SkeletonManager(Game game, MonoGameSwordsPerson player) : base(game)
         {
             this.player = player;
             skeletons = new List<MonogameSkeleton>();
             songManager = new SongManager(game);
-            songManager.OnSongEnd += SongManager_OnSongEnd;
-        }
-
-        private void SongManager_OnSongEnd()
-        {
-            isPlaying = false;
+            game.Components.Add(songManager);
+            this.currentSongState = SongState.HasNotBeenPlayed;
         }
 
         public void AddSkeleton(string direction)
@@ -77,7 +101,7 @@ namespace ProjectRythym
             deadSkeletons = new List<MonogameSkeleton>();            
             GetNumberOfSkeleDirections();
             base.Initialize();
-            StartSong();            
+            StartSong();
         }
 
         private void GetNumberOfSkeleDirections()
@@ -194,7 +218,7 @@ namespace ProjectRythym
             base.Draw(gameTime);
         }
 
-        public void StartSpawning()
+        private void StartSpawning()
         {
             isPlaying = true;
         }

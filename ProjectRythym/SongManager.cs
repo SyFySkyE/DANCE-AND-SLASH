@@ -6,7 +6,9 @@ using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Media;
 
 namespace ProjectRythym
-{    
+{
+    public enum SongState { HasNotBeenPlayed, IsQueued, IsPlaying, HasEnded }
+
     class SongManager : GameComponent
     {
         private Song song;
@@ -15,7 +17,7 @@ namespace ProjectRythym
         private float bps = 2.9f;
         public float Bps { get { return this.bps; } }
         private float bpms = 0;
-        private float previousFrameTime;
+        private SongState songState = SongState.HasNotBeenPlayed;
         private bool isPlaying;
         public bool IsPlaying { get { return this.isPlaying; }
             set
@@ -27,7 +29,6 @@ namespace ProjectRythym
             }
         }
 
-        public static event Action OnBeat;
         public event Action OnSongEnd;
 
         public SongManager( Game game) : base(game)
@@ -53,10 +54,14 @@ namespace ProjectRythym
         public override void Update(GameTime gameTime)
         {
             ScoreManager.SongLength = $"{MediaPlayer.PlayPosition} / {song.Duration}";
-            if (MediaPlayer.PlayPosition == song.Duration)
+            if (this.songState == SongState.IsPlaying)
             {
-                OnSongEnd(); // Stil doesn't work
-            }
+                if (MediaPlayer.State == MediaState.Stopped && songState == SongState.IsPlaying)
+                {
+                    OnSongEnd();
+                    this.songState = SongState.HasEnded;
+                }
+            }            
             base.Update(gameTime);
         }
 
@@ -69,6 +74,7 @@ namespace ProjectRythym
         public void ResumeSong()
         {
             MediaPlayer.Resume();
+            this.songState = SongState.IsPlaying;
             isPlaying = true;
         }
 
