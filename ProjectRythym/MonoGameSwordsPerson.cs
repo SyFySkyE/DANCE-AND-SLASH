@@ -33,7 +33,6 @@ namespace ProjectRythym
         {            
             this.controller = new PlayerController(game);
             player = new Swordsperson();
-            this.showMarkers = true;
             AddDrawingRects();
         }
 
