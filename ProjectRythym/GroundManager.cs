@@ -13,7 +13,7 @@ namespace ProjectRythym
 
         public GroundManager(Game game) : base(game)
         {
-            
+            this.ShowMarkers = false;            
         }
 
         public override void Initialize()
@@ -26,6 +26,16 @@ namespace ProjectRythym
             base.LoadContent();
             this.backdrop = this.Game.Content.Load<Texture2D>("dnsback");
             this.spriteTexture = backdrop;
+        }
+
+        public override void Update(GameTime gameTime)
+        {
+            base.Update(gameTime);
+        }
+
+        public override void Draw(GameTime gameTime)
+        {
+            base.Draw(gameTime);
         }
     }
 }

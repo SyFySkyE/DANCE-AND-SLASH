@@ -28,6 +28,8 @@ namespace ProjectRythym
                 }
             }
         }
+        private bool hasPlayerCompletedSong = false;
+        public bool HasPlayerCompletedSong { get { return this.hasPlayerCompletedSong; }    }
 
         private void HandleStateChange()
         {
@@ -42,7 +44,9 @@ namespace ProjectRythym
             }
             else if (this.currentSongState == SongState.HasEnded)
             {
-                isPlaying = false;                
+                isPlaying = false;
+                hasPlayerCompletedSong = true;
+                this.currentSongState = SongState.HasNotBeenPlayed;
             }
         }
 
@@ -53,6 +57,18 @@ namespace ProjectRythym
             songManager = new SongManager(game);
             game.Components.Add(songManager);
             this.currentSongState = SongState.HasNotBeenPlayed;
+            songManager.OnSongEnd += SongManager_OnSongEnd;
+        }
+
+        private void SongManager_OnSongEnd()
+        {
+            this.CurrentSongState = SongState.HasEnded;
+            EvaluatePlayerPerformance();
+        }
+
+        private void EvaluatePlayerPerformance()
+        {
+
         }
 
         public void AddSkeleton(string direction)

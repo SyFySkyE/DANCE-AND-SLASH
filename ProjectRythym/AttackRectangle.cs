@@ -19,10 +19,10 @@ namespace ProjectRythym
         }
 
         protected override void LoadContent()
-        {
-            attackRectTexture = this.Game.Content.Load<Texture2D>("attackZoneRect");            
-            this.spriteTexture = attackRectTexture;
+        {            
             base.LoadContent();
+            attackRectTexture = this.Game.Content.Load<Texture2D>("attackZoneRect");
+            this.spriteTexture = attackRectTexture;
         }
     }
 }

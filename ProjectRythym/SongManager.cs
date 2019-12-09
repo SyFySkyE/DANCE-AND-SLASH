@@ -34,11 +34,11 @@ namespace ProjectRythym
         public SongManager( Game game) : base(game)
         {            
             MediaPlayer.MediaStateChanged += MediaPlayer_MediaStateChanged;
+            song = Game.Content.Load<Song>("Crystal Tokyo by FantoMenk and Meganeko");
         }
 
         public override void Initialize()
-        {
-            song = Game.Content.Load<Song>("Crystal Tokyo by FantoMenk and Meganeko");
+        {            
             ScoreManager.SongName = song.Name;
             bps = (bpm / 60);
             bpms = 60000 / bpm; // Every beat per bpms            
@@ -65,6 +65,11 @@ namespace ProjectRythym
             base.Update(gameTime);
         }
 
+        private void EvaluatePlayerPerformance()
+        {
+
+        }
+
         public void QueueSong()
         {
             MediaPlayer.Play(song);
@@ -73,7 +78,7 @@ namespace ProjectRythym
 
         public void ResumeSong()
         {
-            MediaPlayer.Resume();
+            MediaPlayer.Resume();            
             this.songState = SongState.IsPlaying;
             isPlaying = true;
         }

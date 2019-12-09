@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework.Input;
 
 namespace ProjectRythym
 {
-    class ScoreManager : DrawableGameComponent
+    class ScoreManager : DrawableGameComponent // TODO I get odd feelings when I look at this class. Should be redone probably.
     {
         SpriteFont font;
         private static int numberOfKills;
@@ -13,6 +13,8 @@ namespace ProjectRythym
         public static int Score;
         public static string SongName;
         public static string SongLength;
+        private static int totalNumberOfNotes = 0;
+        private static float winThreshold = 0.70f; // Multiplies total # of notes with this. If # of kills exceeds this, player wins.
 
         private SpriteBatch sb;
         private Vector2 numOfKillsLoc;
@@ -61,12 +63,33 @@ namespace ProjectRythym
         {
             numberOfKills++;
             Score++;
+            totalNumberOfNotes++;
         }
 
         public static void AddDamage()
         {
             numberOfDamageTaken++;
             Score--;
+            totalNumberOfNotes++;
+        }
+
+        public static bool DidPlayerPass()
+        {
+            if (totalNumberOfNotes * winThreshold >= numberOfKills)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static void ResetStats()
+        {
+            totalNumberOfNotes = 0;
+            numberOfKills = 0;
+            numberOfDamageTaken = 0;
         }
     }
 }

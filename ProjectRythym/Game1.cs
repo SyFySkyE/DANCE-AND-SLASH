@@ -27,6 +27,8 @@ namespace ProjectRythym
             graphics.PreferredBackBufferHeight = 800;
             graphics.PreferredBackBufferWidth = 800;
             Content.RootDirectory = "Content";
+            gameManager = new GameManager(this, spriteBatch);
+            this.Components.Add(gameManager);
         }
 
         /// <summary>
@@ -50,8 +52,7 @@ namespace ProjectRythym
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            gameManager = new GameManager(this, spriteBatch);
-            this.Components.Add(gameManager);
+            
 
             // TODO: use this.Content to load your game content here
         }
